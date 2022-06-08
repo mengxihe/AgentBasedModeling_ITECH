@@ -12,14 +12,14 @@ Additionally, a system that works with a certain level of environmental percepti
 Finally an agent based model is implemented, where the robot is represented as a Boid agent, its detection system implemented with an Intersection.MeshRay Method[3] and its subsumption architecture is made possible by a state machine [4].
 
 ###	Methods
-The agent based model is implemented using the ICD:ABM Modeling Framework with the following methods:
+The agent based model is implemented using the ICD:ABM Modeling Framework with the following methods:  
 
-●	A mesh generator was used to create the mesh environment. In upstream modeling parameters such as texture and topography were used to simulate a rough and natural-like terrain by moving 3d points randomly in z, x and y directions, this way it was ensured that the agents would be able to move through valleys and peaks. 
-●	Generic components native to the framework were used including Boid Agent, Boid Separation, Boid Containment behaviors and Boid Agent System with the mesh as an environment.
-●	A behavior was coded for the Boid agents including a set of specific functions.
-○	A class is implemented using Intersection.MeshRay to find the points that are visible to the agent within a specific distance range and the highest and lowest point within this range that will guide its direction
-○	Various behaviors are implemented to define the behavior of the agent under specific conditions, these include Dig, Pile, Go up, Go Down, Piling and Digging.
-○	A State machine structure is implemented into the execution function to switch the different states. The robot is initialized with the state: goHigh. Then the switch is implemented in the execution for the switching of different states. 
+●	A mesh generator was used to create the mesh environment. In upstream modeling parameters such as texture and topography were used to simulate a rough and natural-like terrain by moving 3d points randomly in z, x and y directions, this way it was ensured that the agents would be able to move through valleys and peaks.   
+●	Generic components native to the framework were used including Boid Agent, Boid Separation, Boid Containment behaviors and Boid Agent System with the mesh as an environment. 
+●	A behavior was coded for the Boid agents including a set of specific functions.  
+●	A class is implemented using Intersection.MeshRay to find the points that are visible to the agent within a specific distance range and the highest and lowest point within this range that will guide its direction.  
+●	Various behaviors are implemented to define the behavior of the agent under specific conditions, these include Dig, Pile, Go up, Go Down, Piling and Digging.  
+●	A State machine structure is implemented into the execution function to switch the different states. The robot is initialized with the state: goHigh. Then the switch is implemented in the execution for the switching of different states.   
 
 ###	Results
 The outcome changes heavily dependent on the input variables - Within a good setting the goal of flattening the mesh surface is getting quite obvious  furthermore an emergent clustering of the agents appears.
