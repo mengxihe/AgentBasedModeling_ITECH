@@ -1,7 +1,7 @@
 # AgentBasedModeling_ITECH
 Agent based modeling assgnment completed at the ITECH program
 ## ROBOT DIGGERS
-
+![](imgs/GoodAgents.jpg)
 Mengxi He, Phillip Kragll, Alan Eskildsen, 
 
 ###	Motivation
